@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>CV and Job Description Match</h1>
+
+<p>Your CV and job description have a match percentage of {{ match_percentage }}%.</p>
+
+{% if match_percentage >= 75 %}
+  <p>Congratulations, you are a good fit for this job!</p>
+{% elif match_percentage >= 50 %}
+  <p>You may be a good fit for this job, but you should consider applying to other jobs as well.</p>
+{% else %}
+  <p>Unfortunately, you may not be a good fit for this job. You might want to consider applying to other jobs or updating your CV.</p>
+{% endif %}
+
+
+
+</body>
+</html>
